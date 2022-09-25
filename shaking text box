@@ -1,0 +1,18 @@
+ <!--tipo de animacao (scc)-->
+       input:invalid{
+       animation: shake .3s;
+    }
+    
+    /intensidade da animacao/
+    @keyframes shake{
+        25% {transform: translateX(4px) }
+        50% {transform: translateX(-4px) }
+        75% {transform: translateX(4px) }
+    }
+
+
+ <!--(html)-->
+    <input 
+    type="text"
+    pattern="[a-z]*"
+    placeholder="texto de descrição">
